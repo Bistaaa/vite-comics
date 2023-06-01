@@ -33,7 +33,54 @@ export default {
 
     <!-- LINK -->
 
-    <section id="link"></section>
+    <section id="link">
+        <div id="link-left">
+
+            <!-- LEFT COLUMN -->
+            <div id="link-left-column">
+                <h3 class="link-categories">DC COMICS</h3>
+                <p class="link-titles">Characters</p>
+                <p class="link-titles">Comics</p>
+                <p class="link-titles">Movies</p>
+                <p class="link-titles">TV</p>
+                <p class="link-titles">Games</p>
+                <p class="link-titles">Video</p>
+                <p class="link-titles">News</p>
+                <h3 class="link-categories" id="title-shop">SHOP</h3>
+                <p class="link-titles">Shop DC</p>
+                <p class="link-titles">Shop DC collectibles</p>
+            </div>
+
+            <!-- CENTER COLUMN -->
+            <div id="link-center-column">
+                <h3 class="link-categories">DC</h3>
+                <p class="link-titles">Terms Of Use</p>
+                <p class="link-titles">Privacy policy (New)</p>
+                <p class="link-titles">Ad Choices</p>
+                <p class="link-titles">Advertising</p>
+                <p class="link-titles">Jobs</p>
+                <p class="link-titles">Subscription</p>
+                <p class="link-titles">Talent Workshops</p>
+                <p class="link-titles">CPSC Certificates</p>
+                <p class="link-titles">Rating</p>
+                <p class="link-titles">Shop Help</p>
+                <p class="link-titles">Contact Us</p>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div id="link-right-column">
+                <h3 class="link-categories">SITES</h3>
+                <p class="link-titles">DC</p>
+                <p class="link-titles">MAD Magazine</p>
+                <p class="link-titles">DC Kids</p>
+                <p class="link-titles">DC Universe</p>
+                <p class="link-titles">DC Power Visa</p>
+            </div>
+        </div>
+        <div id="link-right">
+            <img id="rotated-logo" src="../assets/images/dc-logo-bg.png">
+        </div>
+    </section>
 
 
     <!-- FOLLOW US -->
@@ -84,6 +131,40 @@ export default {
         }
     }
 
+}
+
+#link {
+    background-image: url(../assets/images/footer-bg.jpg);
+    background-size: cover;
+    padding: 0 15%;
+    @include my-flex-row;
+    justify-content: space-between;
+    align-items: center;
+    height: 360px;
+    overflow-y: hidden;
+
+    #link-left {
+        @include my-flex-row;
+        gap: 40px;
+        padding: 50px 0;
+
+        .link-categories {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .link-titles {
+            color: rgba(126, 124, 124, 255);
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        #title-shop {
+            margin-top: 15px
+        }
+    }
+
+    #link-right {}
 }
 
 #follow-us {
