@@ -4,7 +4,11 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <section id="store"></section>
+    <section id="link"></section>
+    <section id="follow-us"></section>
+</template>
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables.scss" as *;
