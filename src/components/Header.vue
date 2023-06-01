@@ -62,7 +62,7 @@ export default {
     @include my-flex-row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 18%;
+    padding: 0 15%;
 
     #logo {
         margin: 10px 0;
