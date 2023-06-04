@@ -50,6 +50,11 @@ export default {
                 <hr>
             </div>
         </nav>
+
+    </div>
+
+    <div id="jumbotron_container">
+        <!-- <img id="jumbotron" src="../assets/images/jumbotron.jpg"> -->
     </div>
 </template>
 
@@ -95,5 +100,12 @@ export default {
             }
         }
     }
+}
+
+#jumbotron_container {
+    height: 400px;
+    background-image: url(../assets/images/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 </style>
